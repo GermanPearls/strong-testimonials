@@ -81,7 +81,6 @@ class Strong_Testimonials_Settings_General {
 	 */
 	public static function sanitize_options( $input ) {
 		$input['embed_width']           = $input['embed_width'] ? (int) sanitize_text_field( $input['embed_width'] ) : '';
-		$input['load_font_awesome']     = wpmtst_sanitize_checkbox( $input, 'load_font_awesome' );
 		$input['nofollow']              = wpmtst_sanitize_checkbox( $input, 'nofollow' );
 		$input['pending_indicator']     = wpmtst_sanitize_checkbox( $input, 'pending_indicator' );
 		$input['remove_whitespace']     = wpmtst_sanitize_checkbox( $input, 'remove_whitespace' );

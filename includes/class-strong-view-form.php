@@ -46,7 +46,6 @@ class Strong_View_Form extends Strong_View {
 	 */
 	public function print_overlay() {
 		if ( apply_filters( 'wpmtst_form_wait', true ) ) {
-			WPMST()->render->add_style( 'wpmtst-font-awesome' );
 			?>
 			<div class="strong-form-wait">
 				<div class="message">

@@ -420,7 +420,7 @@ class Strong_View {
 		if ( isset( $this->atts['client_section'] ) ) {
 			foreach ( $this->atts['client_section'] as $field ) {
 				if ( 'rating' == $field['type'] ) {
-					WPMST()->render->add_style( 'wpmtst-rating-display' );
+					//WPMST()->render->add_style( 'wpmtst-rating-display' );
 					break;
 				}
 			}

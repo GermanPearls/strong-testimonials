@@ -429,7 +429,7 @@ function wpmtst_field_error( $field ) {
 function wpmtst_form_submit_button( $preview = false ) {
 	?>
 	<div class="form-field wpmtst-submit">
-		<label type="text" name="submit button" aria-labelledby="wpmtst_submit_testimonial"><input type="<?php echo $preview ? 'button' : 'submit'; ?>" id="wpmtst_submit_testimonial" name="wpmtst_submit_testimonial" value="<?php echo esc_attr( wpmtst_get_form_message( 'form-submit-button' ) ); ?>" class="<?php echo esc_attr( apply_filters( 'wpmtst_submit_button_class', 'button' ) ); ?>" tabindex="0"></label>
+		<input type="<?php echo $preview ? 'button' : 'submit'; ?>" id="wpmtst_submit_testimonial" name="wpmtst_submit_testimonial" value="<?php echo esc_attr( wpmtst_get_form_message( 'form-submit-button' ) ); ?>" class="<?php echo esc_attr( apply_filters( 'wpmtst_submit_button_class', 'button' ) ); ?>" tabindex="0">
 	</div>
 	<?php
 }
